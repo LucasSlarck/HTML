@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>
+        Bora
+    </title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<header>
+    <img src="_572d16e9-ca7f-49ee-8868-900ef3cf35c2.jpeg" alt="LOGO" width="1000" height="1000">
+    
+    <ul class="menu">
+        <li><a href="Home.html">Página Inicial</a></li>
+        <li><a href="Festas.html">Festas</a></li>
+        <li><a href="Mapa.html">Mapa das Festas</a></li>
+        <li><a href="Sobre.html">Sobre</a></li>
+        <li><a href="Sobre.html">Contato</a></li>
+        <li id="user-dropdown">
+            <a href="#">Usuário</a>
+            <div class="user-container" id="user-container">
+                <a href="#">Minha Conta</a>
+                    <box>Log-in:</box>
+                    <box>Senha:</box>
+                    <a href="#">Entrar</a>
+                <a href="#">Sair</a>
+            </div>
+        </li>
+    
+    </ul>
+    <script>
+        const userDropdown = document.getElementById('user-dropdown');
+        const userContainer = document.getElementById('user-container');
+
+        userDropdown.addEventListener('mouseover', () => {
+            userContainer.style.display = 'block';
+        });
+
+        userDropdown.addEventListener('mouseout', () => {
+            userContainer.style.display = 'none';
+        });
+    </script>
+    
+    
+
+</header>
+<body>
+    <h1>Bora!</h1>
+    <div>
+        <ol>
+            <li>Festa 1</li>
+            <li>Festa 2</li>
+            <li>Festa 3</li>
+        </ol>
+        <p>This is a paragrh</p>
+        <p>
+            <span>This is a paragrh.css</span>
+        </p>
+
+    </div>
+ <footer>
+    <a> Copyright © 2017 Bora! - todos os direitos reservados.</a>
+ </footer>
+</body>
+</html>

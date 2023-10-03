@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Menu com Cadastro de Usuário</title>
+    <style>
+        /* Estilos para o menu */
+        ul.menu {
+            list-style-type: none;
+            padding: 0;
+            background-color: #333;
+            overflow: hidden;
+        }
+
+        ul.menu li {
+            float: left;
+            margin-right: 20px;
+        }
+
+        ul.menu li a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        ul.menu li a:hover {
+            text-decoration: underline;
+        }
+
+        /* Estilos para o container de cadastro de usuário */
+        .user-container {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 200px;
+            padding: 10px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .user-container a {
+            color: #333;
+            text-decoration: none;
+            display: block;
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <ul class="menu">
+        <li><a href="#">Página Inicial</a></li>
+        <li><a href="#">Sobre</a></li>
+        <li><a href="#">Contato</a></li>
+    </ul>
+    
+    <script>
+        // JavaScript para mostrar/ocultar o container de usuário ao passar o mouse sobre "Usuário"
+        const userDropdown = document.getElementById('user-dropdown');
+        const userContainer = document.getElementById('user-container');
+
+        userDropdown.addEventListener('mouseover', () => {
+            userContainer.style.display = 'block';
+        });
+
+        userDropdown.addEventListener('mouseout', () => {
+            userContainer.style.display = 'none';
+        });
+    </script>
+</body>
+</html>
